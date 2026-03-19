@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/itsvasugrover/nanobucket/blob/develop/README.md
+    about: Please review the project documentation before submitting an issue
+  - name: Security Vulnerability
+    url: https://github.com/itsvasugrover/nanobucket/security/advisories/new
+    about: Report security vulnerabilities through GitHub Security Advisories

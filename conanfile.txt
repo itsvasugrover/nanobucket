@@ -1,0 +1,14 @@
+[requires]
+drogon/1.9.12
+spdlog/1.17.0
+openssl/3.6.1
+pugixml/1.15
+sqlite3/3.51.0
+gtest/1.14.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
