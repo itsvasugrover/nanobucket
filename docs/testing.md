@@ -188,12 +188,12 @@ cd build/Release
 ctest --output-on-failure
 ```
 
-The test binary is `build/Release/test/s3lite_tests`. Each GoogleTest suite can be filtered:
+The test binary is `build/Release/test/nanobucket_tests`. Each GoogleTest suite can be filtered:
 
 ```bash
-./build/Release/test/s3lite_tests --gtest_filter="SigV4*"
-./build/Release/test/s3lite_tests --gtest_filter="MetaStore*"
-./build/Release/test/s3lite_tests --gtest_filter="StorageEngine*"
+./build/Release/test/nanobucket_tests --gtest_filter="SigV4*"
+./build/Release/test/nanobucket_tests --gtest_filter="MetaStore*"
+./build/Release/test/nanobucket_tests --gtest_filter="StorageEngine*"
 ```
 
 ---

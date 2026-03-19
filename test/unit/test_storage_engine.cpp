@@ -22,7 +22,7 @@ class StorageEngineTest : public ::testing::Test {
 protected:
     void SetUp() override {
         // mkdtemp requires a writable template ending in XXXXXX
-        char tmpl[] = "/tmp/s3lite_storage_XXXXXX";
+        char tmpl[] = "/tmp/nanobucket_storage_XXXXXX";
         char* dir   = mkdtemp(tmpl);
         ASSERT_NE(dir, nullptr);
         root_ = dir;

@@ -115,8 +115,8 @@ Everything is an environment variable. No config files needed.
 | `NANOBUCKET_PORT` | `9000` | TCP port to listen on |
 | `NANOBUCKET_DATA_ROOT` | `./data` | Root directory for stored objects |
 | `NANOBUCKET_DB_PATH` | `<dataRoot>/meta.db` | SQLite database path |
-| `NANOBUCKET_ACCESS_KEY` | `s3liteadmin` | AWS access key |
-| `NANOBUCKET_SECRET_KEY` | `s3liteadmin` | AWS secret key |
+| `NANOBUCKET_ACCESS_KEY` | `nanobucketadmin` | AWS access key |
+| `NANOBUCKET_SECRET_KEY` | `nanobucketadmin` | AWS secret key |
 
 ---
 
@@ -127,8 +127,8 @@ Everything is an environment variable. No config files needed.
 ```ini
 # ~/.s3cfg
 [default]
-access_key = s3liteadmin
-secret_key = s3liteadmin
+access_key = nanobucketadmin
+secret_key = nanobucketadmin
 host_base = localhost:9000
 host_bucket = localhost:9000/%(bucket)s
 use_https = False
@@ -150,8 +150,8 @@ import boto3
 s3 = boto3.client(
     "s3",
     endpoint_url="http://localhost:9000",
-    aws_access_key_id="s3liteadmin",
-    aws_secret_access_key="s3liteadmin",
+    aws_access_key_id="nanobucketadmin",
+    aws_secret_access_key="nanobucketadmin",
     region_name="us-east-1",
 )
 
@@ -251,4 +251,4 @@ If you test against a client that isn't s3cmd (aws CLI, boto3, s3fs, rclone, etc
 
 ## License
 
-[MIT](LICENSE) — © 2025 Vasu Grover (NotCoderGuy)
+NanoBucket is licensed under the MIT License. See [LICENSE](LICENSE) for details.
